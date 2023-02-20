@@ -1,0 +1,219 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body{
+    width: 100%;
+    position: relative;
+}
+.nav-header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(72, 16, 156);
+    color: white;
+    padding: 15px;
+    gap: 20px;
+    
+}
+.myColor{
+    color:rgb(72, 16, 156);
+}
+.mybgColor{
+    background-color: rgb(72, 16, 156);
+    
+}
+.nav-header button{
+    transition: 300ms;
+    animation-name: shop;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes shop {
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }  
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.nav-header button:hover{
+    transform: scale(1.2);
+}
+.headerIcon{
+    margin: 0;
+}
+.headerIcon span{
+    font-weight: 500;
+    font-size: 13px;
+}
+.theNav p, .thisNav p{
+    margin: 0;
+}
+.theNav{
+    background-color: rgb(72, 16, 156);
+    color: white;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.thisNav{
+    background-color: rgb(22, 2, 152);
+    color: white;
+    font-size: 13px;
+    padding: 0px 20px;
+}
+.search{
+    padding: 10px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+}
+.search input{
+    outline: 0;
+    font-size: 13px;
+}
+.searchCon button{
+    background-color: orange;
+    padding: 0px 15px;
+    font-size: 13px;
+    color: white;
+    border: 0;
+}
+.searchCon button:hover{
+    background-color: rgb(22, 2, 152);
+    /* color:orange ; */
+    font-weight: bold;
+}
+
+
+.thisNav .dropNavContent{
+    padding: 10px;
+}
+.thisNav .dropNavContent:hover{
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(72, 16, 156);
+
+}
+
+.thisNav .dropNavContent:after{
+    position: relative;
+    top: 10px;
+    display: block;
+    content: "";
+    width: 100%;
+    border-bottom:4px solid orange ;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+
+}
+
+.thisNav .dropNavContent:hover:after{
+    transform: scaleX(1.5);
+}
+.thisNav .dropNavContent:focus:after{
+    transform: scaleX(1.5);
+}
+.thirdnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.thirdnav-content{
+ padding: 15px;
+ box-shadow: 0px 0px 2px 0px gray;
+ border-radius: 5px;
+ width: 16.7%;
+ justify-content: center;
+ font-size: 13px;
+}
+.dealCon{
+    padding: 20px;
+}
+.dealConNav{
+    border-radius: 10px 10px 0 0;
+    padding: 5px 20px;
+}
+.dealConNav:hover{
+    animation-name: nav;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes nav {
+    0%{
+        background-color: rgb(72, 16, 156);
+    }
+    50%{
+        background-color:orange ;
+        transition: 300ms;
+    }  
+    100%{
+        background-color: rgb(22, 2, 152);
+    }
+}
+.productParentContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+.productParentContainer .productContainer img{
+    width: 100px;
+}
+.productContainer{
+    width: 100%;
+}
+
+/* Style The Dropdown Button */
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    /* position: relative; */
+    display: inline-block;
+    /* width: 100%; */
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+/* .dropContentDisp{
+    width: 100%;
+    position: relative;
+} */
