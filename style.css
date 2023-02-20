@@ -92,7 +92,18 @@ body{
     font-weight: bold;
 }
 
-
+.sec1{
+    padding: 20px;
+}
+.caroSection{
+    width: 70%;
+}
+.caroCircleBtn{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50%;
+    background-color: orangered !important;
+}
 .thisNav .dropNavContent{
     padding: 10px;
 }

@@ -118,30 +118,42 @@
     
     
     <section class="sec1 d-md-flex d-sm-flex d-lg-flex">
-        <div class="caroSection w-100">
-            <div id="carouselExampleIndicators" class="carousel slide w-75">
+        <div class="caroSection ">
+            <div id="carouselExampleIndicators" class="carousel slide w-100">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active caroCircleBtn" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" class="caroCircleBtn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" class="caroCircleBtn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" class="caroCircleBtn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" class="caroCircleBtn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" class="caroCircleBtn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./e-asset/carousel1.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./e-asset/carousel1.webp" class="d-block w-100 rounded rounded-2" alt="...">
                   </div>
-                  <div class="carousel-item">
-                    <img src="./e-asset/carousel2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-item" data-bs-interval="20000">
+                    <img src="./e-asset/carousel2.jpg" class="d-block w-100 rounded rounded-2" alt="...">
                   </div>
-                  <div class="carousel-item">
-                    <img src="./e-asset/carousel3.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-item" data-bs-interval="30000">
+                    <img src="./e-asset/carousel3.webp" class="d-block w-100 rounded rounded-2" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="40000">
+                    <img src="./e-asset/carousel4.jpg" class="d-block w-100 rounded rounded-2" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="50000">
+                    <img src="./e-asset/carousel5.jpg" class="d-block w-100 rounded rounded-2" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="60000">
+                    <img src="./e-asset/carousel6.jpg" class="d-block w-100 rounded rounded-2" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="fw-bolder text-dark bg-white py-2 px-3 rounded rounded-circle" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="fw-bolder text-dark bg-white py-2 px-3 rounded rounded-circle" aria-hidden="true"><i class="fas fa-angle-right"></i></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
