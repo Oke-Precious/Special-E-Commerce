@@ -305,6 +305,17 @@ body{
 .sec4 .card .card-body a{
     text-decoration: none;
     color: purple;
+    font-size: 12px;
+    font-weight: 500;
+}
+.logoSec{
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns:1fr 1fr  1fr 1fr 1fr 1fr ;
+}
+.logoSec img{
+    width: 100%;
 }
   @media screen and (max-width:1024px){
     .mobileNavs{
