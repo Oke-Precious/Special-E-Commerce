@@ -278,6 +278,25 @@ body{
     padding: 20px;
     /* outline:1px solid red; */
   }
+  .ads1img2{
+    display: none;
+  }
+  .sec4{
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+.ads2Con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+}
+.ads2Con img{
+    width: 100%;
+}
   @media screen and (max-width:1024px){
     .mobileNavs{
         padding-top: 50px;
@@ -325,8 +344,7 @@ body{
         margin-bottom: 20px;;
     }
     .caroSection img{
-        height: 200px;
-    }
+        height: 200px; }
     .caroAds{
         width: 100%;
     }
@@ -346,4 +364,27 @@ body{
     .productParentContainer .productContainer img{
         width: 70px;
     }
+    .ads1img2{
+        display: block;
+    }
+    .ads1img1{
+        display: none;
+    }
+    .ads2Con img{
+        width: 100%;
+    }
+    .ads2Con{
+        display: block;
+        width: 100%;
+    }
+    .mymb{
+        margin-bottom: 20px;
+    }
+    .sec4{
+        /* display: flex; */
+        overflow-x: scroll;
+    }
+    .card{
+        min-width: 59%;
+      }
   }
