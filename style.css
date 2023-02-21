@@ -297,6 +297,15 @@ body{
 .ads2Con img{
     width: 100%;
 }
+.sec4 .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec4 .card .card-body a{
+    text-decoration: none;
+    color: purple;
+}
   @media screen and (max-width:1024px){
     .mobileNavs{
         padding-top: 50px;
