@@ -272,9 +272,12 @@ body{
   }
   .sec3{
     padding: 20px;
-    background-color: white;
+    background-color:white ;
   }
-
+  .adsContainer{
+    padding: 20px;
+    /* outline:1px solid red; */
+  }
   @media screen and (max-width:1024px){
     .mobileNavs{
         padding-top: 50px;
