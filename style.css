@@ -271,21 +271,29 @@ body{
     width: 200px;
   }
 
-  @media screen and (max-width:1000px){
+  @media screen and (max-width:1024px){
     .mobileNavs{
+        padding-top: 50px;
         display: block;
         width: 100%;
-        /* padding: 0px 20px; */
-        background-color: white;
+        background-color: rgb(72, 16, 156);
+        
     }
     .navSection{
         display: none;
     }
     .mobileNav{
+        top: 0;
         padding:0 10px;
         display: flex;
+        background-color: rgb(72, 16, 156);
+        z-index: 5;
+        position: fixed;
         justify-content: space-between;
         align-items: center;
+    }
+    .iconNav{
+        color: white;
     }
     .searchCon{
         padding:0 10px;
@@ -298,6 +306,7 @@ body{
         display: flex;
     }
     .search2 input{
+        outline: none;
         font-size: 12px;
     }
     .sec1{
@@ -319,9 +328,10 @@ body{
     }
     .productParentContainer{
         width: 100%;
+        overflow-x: scroll;
         display: flex;
         gap: 20px;
-        overflow-x: scroll;
+        
     }
     .productContainer{
         display: block;
