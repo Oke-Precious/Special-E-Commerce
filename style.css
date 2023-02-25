@@ -317,9 +317,26 @@ body{
 .logoSec img{
     width: 100%;
 }
-.desktopFooter{
+.desktopFooterNav{
     background-color: rgb(34, 32, 32);
-    color: white;
+    color: rgb(210, 220, 242);
+}
+.desktopFooter{
+    background-color: black;
+    color: rgb(210, 220, 242);
+
+    padding: 20px ;
+}
+.eachFooterContainer{
+    color: rgb(210, 220, 242);
+
+}
+.footerList{
+    list-style-type: none;
+    font-size: 12px;
+    margin: 0;
+    color: rgb(210, 220, 242);
+
 }
   @media screen and (max-width:1024px){
     .mobileNavs{
