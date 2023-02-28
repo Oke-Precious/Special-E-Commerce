@@ -318,14 +318,17 @@ body{
     width: 100%;
 }
 .desktopFooterNav{
-    background-color: rgb(34, 32, 32);
-    color: rgb(210, 220, 242);
+background-color: rgb(34, 32, 32);
+color: rgb(210, 220, 242);
+font-size: 13px;
 }
 .desktopFooter{
     background-color: black;
     color: rgb(210, 220, 242);
-
-    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 30px ;
 }
 .eachFooterContainer{
     color: rgb(210, 220, 242);
@@ -337,6 +340,21 @@ body{
     margin: 0;
     color: rgb(210, 220, 242);
 
+}
+.downloadSection{
+    display: flex;
+    flex-direction: column;
+}
+.downloadImg img{
+    width: 150px;
+}
+.browser-btn button{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.browser-btn button i {
+    margin
 }
   @media screen and (max-width:1024px){
     .mobileNavs{
