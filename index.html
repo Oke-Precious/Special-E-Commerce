@@ -121,72 +121,29 @@
         </nav>
     
     
-        <nav class="navbar thisNav px-5">
-            <div class="dropdown">
-                <div class="dropNavContent"><b>All categories <i class="fa fa-bars"></i></b></div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Computer and Accessories</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Phones and Tablets</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Electronics</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Special Fashion</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Home and Kitchen</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Baby, Kids and Toys</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropNavContent">Other Categories</div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
+        <nav class="navbar thisNav ">
+
+
+           
+                <div class="dropNavContent" onmouseover="dropObject(1)"><b>All categories <i class="fa fa-bars"></i></b></div>
+           
+                <div class="dropNavContent" onmouseover="dropObject(2)">Computer and Accessories</div>
+          
+                <div class="dropNavContent" onmouseover="dropObject(3)">Phones and Tablets</div>
+           
+                <div class="dropNavContent" onmouseover="dropObject(4)">Electronics</div>
+           
+                <div class="dropNavContent" onmouseover="dropObject(5)">Special Fashion</div>
+            
+                <div class="dropNavContent" onmouseover="dropObject(6)">Home and Kitchen</div>
+          
+                <div class="dropNavContent" onmouseover="dropObject(7)">Baby, Kids and Toys</div>
+                
+                <div class="dropNavContent" onmouseover="dropObject(8)">Other Categories</div>
         </nav>
+
+        <div id="dropContainer">
+        </div>
     </section>
    
     <section class="sec1">
@@ -528,6 +485,8 @@
         </div>
     </section>
 
+ 
+
     <section class="kongaText">
         <h3>Konga Online Shopping In NIgeria - Best Shopping Site</h3>
     </section>
@@ -551,7 +510,8 @@
             </div>
 
             <div class="d-flex gap-2 align-items-center">
-                <i class="fa bg-light rounded text-dark rounded-circle fa-whatsapp  p-2"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab  bg-light rounded text-dark rounded-circle fa-whatsapp  p-2"></i>
                 <div class="d-flex  gap-0 flex-column align-items-left justify-content-start">
                     <p class="fw-bold" style="margin: 0;">WHATSAPP</p>
                     <p  style="margin: 0;">08101238416, 09012445611</p>
