@@ -478,7 +478,7 @@ font-size: 13px;
       }
       
       #main {
-        transition: margin-left .5s;
+        transition:  .5s;
         padding: 16px;
       }
       .kongaText{
@@ -486,5 +486,23 @@ font-size: 13px;
       }
       .alldesktopfooter{
         display: none;
+      }
+      .resFooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color:  rgb(72, 16, 156);
+      }
+      .resFooter button{
+        color: white;
+        background-color: transparent;
+        border: none;
+        padding: 0px 20px;
+      }
+      .resFooter button label{
+        display: block;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
       }
   }
