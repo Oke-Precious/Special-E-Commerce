@@ -326,10 +326,16 @@ font-size: 13px;
 
 #dropContainer{
     height: 500px;
-    background-color:whitesmoke;
+    background-color:rgb(235, 230, 230);
     width: 100%;
     display: none;
     position: absolute;
+}
+.kongaText{
+    padding: 20px;
+}
+.kongaText p {
+    font-size: 13px;
 }
 
   @media screen and (max-width:1024px){
@@ -474,5 +480,11 @@ font-size: 13px;
       #main {
         transition: margin-left .5s;
         padding: 16px;
+      }
+      .kongaText{
+        display: none;
+      }
+      .alldesktopfooter{
+        display: none;
       }
   }

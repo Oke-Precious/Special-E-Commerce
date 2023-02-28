@@ -6,9 +6,7 @@ const landingPageScroll=()=>{
         navSection.style.top = "-115px "
         // alert("work")
     }
-    else{
-        
-    }
+    else{}
     
 }
 const cancelHeader=()=>{
