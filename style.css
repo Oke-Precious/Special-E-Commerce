@@ -337,7 +337,9 @@ font-size: 13px;
 .kongaText p {
     font-size: 13px;
 }
-
+.resFooter{
+    display: none;
+}
   @media screen and (max-width:1024px){
     .mobileNavs{
         padding-top: 50px;
@@ -489,6 +491,7 @@ font-size: 13px;
       }
       .resFooter{
         position: fixed;
+        display: flex;
         bottom: 0;
         width: 100%;
         background-color:  rgb(72, 16, 156);
