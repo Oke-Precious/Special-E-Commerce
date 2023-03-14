@@ -340,7 +340,53 @@ font-size: 13px;
 .resFooter{
     display: none;
 }
+
+
+
+
+
   @media screen and (max-width:1024px){
+    /* ============================SIDE NAV-======================= */
+.overlay {
+    height: 0;
+    opacity: 0;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    /* background-color: rgba(0,0,0, 0.9); */
+    /* top: 0; */
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 2s;
+  }
+  
+  .overlay-content {
+    position:relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+.closebtn {
+    margin: 0;
+    display: none;
+    transition: 0.5s;
+  }
     .mobileNavs{
         padding-top: 50px;
         display: block;
@@ -356,7 +402,7 @@ font-size: 13px;
         padding:0 10px;
         display: flex;
         background-color: rgb(72, 16, 156);
-        z-index: 5;
+        z-index: 15;
         position: fixed;
         justify-content: space-between;
         align-items: center;
@@ -492,6 +538,7 @@ font-size: 13px;
       .resFooter{
         position: fixed;
         display: flex;
+        z-index: 10;
         bottom: 0;
         width: 100%;
         background-color:  rgb(72, 16, 156);

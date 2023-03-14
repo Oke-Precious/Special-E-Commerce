@@ -75,3 +75,20 @@ const dropObject=(param)=>{
     }
 
 }
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.opacity = "100%";
+    document.getElementById("myNav").style.height = "100vh";
+    openicon.style.display="none"
+    closeicon.style.display="block"
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.opacity = "0";
+    document.getElementById("myNav").style.width = "0";
+    document.getElementById("myNav").style.height = "0";
+
+    openicon.style.display="block"
+    closeicon.style.display="none"
+}

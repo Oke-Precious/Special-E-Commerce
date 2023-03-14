@@ -12,54 +12,17 @@
 <body onscroll="landingPageScroll()">
     <section class=" mobileNavs w-100">
         <nav class="mobileNav w-100">
-
-            <button class="bg-transparent text-light border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                    aria-controls="offcanvasWithBothOptions" style="color:white; font-family: cursive; font-weight: bold;"><i class="fa fa-bars"></i> Special</button>
-                
-                <div style="background-color:rgb(242, 242, 242) ;" class="offcanvas leftDet offcanvas-start w-100" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-body  offbtnns">
-                        <button class="" data-bs-dismiss="offcanvas" onclick="myAcc()"><i class="far fa-user"> </i> <p>My account</p></button>
         
-                        <button class="" onclick="freqTrans()" data-bs-dismiss="offcanvas"><i class="fa fa-exchange-alt"> </i> <p>Frequent Transaction</p></button>
         
-                        <button onclick="payBill()" data-bs-dismiss="offcanvas" class=""><i class="fa fa-money-bills"> </i> <p>Pay Bills</p></button>
-        
-                        <button data-bs-dismiss="offcanvas" class="" onclick="buyAirtime()"><i class="fa fa-mobile-android"> </i> <p>Buy Airtime</p></button>
-        
-                        <button class="" data-bs-dismiss="offcanvas" onclick="transfer()"><i class="fa fa-exchange"> </i> <p>Transfer Money</p></button>
-        
-                        <button class="" data-bs-dismiss="offcanvas"><i class="fa fa-user"> </i> <p>Beneficiary Management</p></button>
-        
-                        <button class="" data-bs-dismiss="offcanvas" onclick="virtualCard()"><i class="far fa-credit-card"> </i> <p>Card Services</p></button>
-        
-                        <button class="" data-bs-dismiss="offcanvas"><i class="fa fa-exclamation-circle"> </i> <p>Self Service</p></button>
-        
-                        <button class=""  data-bs-dismiss="offcanvas"><p class="">&#8358 </p> <p>My account</p></button>
-        
-                        <button class="" data-bs-dismiss="offcanvas"><i class="fa fa-credit-card"> </i> <p>Digital Payment</p></button>
-        
-                        <button class="" onclick="freqTrans()" data-bs-dismiss="offcanvas"><i class="fa fa-glass-cheers"> </i> <p>Lifestyle</p></button>
-        
-                        <hr class="border-light border-2 bg-light">
-        
-                        <button class="" data-bs-dismiss="offcanvas" onclick="settings()"><i class="fa fa-cog"> </i> <p>Account Setting</p></button>
-        
-                        <button data-bs-dismiss="offcanvas" class=""><i class="fa fa-share"> </i> <p>Share Experience</p></button>
-        
-                        <button class="" onclick="signOut()"><i class="fa fa-sign-out"> </i> <p>Log out</p></button>
-                        
-                    </div>
-                </div>
-    </div>
-
-
-            <!-- <div class="d-flex gap-1 align-items-center justify-content-center">
+            <div class="d-flex gap-1 align-items-center justify-content-center" onclick="openNav()">
                 <button class="btn text-light">
-                    <i class="fa fa-bars"></i>
+                    <i id="openicon" class="fa fa-bars"></i>
+                    <i id="closeicon" class="fa fa-times closebtn"></i>
                 </button>
                 <div style="color:white; font-family: cursive; font-weight: bold;">Special</div>
-            </div> -->
+            </div>
+        
+                
             <div class="d-flex gap-1 align-items-center justify-content-center">
                 <button class="btn text-light">
                     <i class="fa fa-home"></i>
@@ -69,6 +32,16 @@
                 </button>
             </div>
         </nav>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <div style=""></div>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
         <div class="d-flex searchCon">
             <div class="search2 rounded-start ">
                 <input type="text" placeholder="Search for products, brands and categories..." class="border-0 bg-transparent w-100">
@@ -661,7 +634,7 @@
             </div>
         </div>
     </section>
-    <div style="height: 70px;"></div>
+    <div style="height: 50px;"></div>
     <footer class="navbar resFooter">
         <button>
             <i class="fa fa-home"></i>
