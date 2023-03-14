@@ -79,7 +79,7 @@ const dropObject=(param)=>{
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
     document.getElementById("myNav").style.opacity = "100%";
-    document.getElementById("myNav").style.height = "100vh";
+    document.getElementById("myNav").style.height = "100%";
     openicon.style.display="none"
     closeicon.style.display="block"
 }
