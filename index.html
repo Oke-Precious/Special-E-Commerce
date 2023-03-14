@@ -14,10 +14,10 @@
         <nav class="mobileNav w-100">
         
         
-            <div class="d-flex gap-1 align-items-center justify-content-center" onclick="openNav()">
+            <div class="d-flex gap-1 align-items-center justify-content-center">
                 <button class="btn text-light">
-                    <i id="openicon" class="fa fa-bars"></i>
-                    <i id="closeicon" class="fa fa-times closebtn"></i>
+                    <i id="openicon" class="fa fa-bars" onclick="openNav()"></i>
+                    <i id="closeicon" class="fa fa-times closebtn" onclick="closeNav()"></i>
                 </button>
                 <div style="color:white; font-family: cursive; font-weight: bold;">Special</div>
             </div>
@@ -34,7 +34,7 @@
         </nav>
         <div id="myNav" class="overlay">
             <div class="overlay-content">
-                <div style=""></div>
+                <div ></div>
                 <a href="#">About</a>
                 <a href="#">Services</a>
                 <a href="#">Clients</a>
