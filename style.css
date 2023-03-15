@@ -100,6 +100,24 @@ body{
     z-index: 5;
     width: 100%;
 }
+.loginBtn{
+    padding: 10px;
+    cursor: pointer;
+}
+.closeoff{
+    background-color: transparent;
+    padding: 3px 7px;
+    border: solid 1px rgb(156, 156, 156);
+    border-radius: 5px;
+    display: flex;
+    color: rgb(156, 156, 156) !important;
+    gap: 10px;
+    align-items: center;
+}
+.loginBtn:hover{
+    background-color: orange;
+    border-radius: 5px;
+}
 .sec1{
     padding: 20px;
     display: flex;
