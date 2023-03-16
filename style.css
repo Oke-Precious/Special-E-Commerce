@@ -461,8 +461,7 @@ font-size: 13px;
     position: absolute;
     text-align: center;
     border: solid 1px rgb(219, 219, 219);
-}
-  @media screen and (max-width:1024px){
+} @media screen and (max-width:1024px){
     /* ============================SIDE NAV-======================= */
 .overlay {
     height: 0;
