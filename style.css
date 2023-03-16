@@ -433,7 +433,16 @@ font-size: 13px;
     clear: both;
   }
 
-
+/* =========================SIGNIN/UP PAGE===================== */
+.emailInput{
+    padding:10px;
+    border-radius: 2px;
+    border: 1px solid rgb(180, 180, 180);
+}
+.emailInput:focus{
+    outline: 1px solid gray;
+    border: none;
+}
 
   @media screen and (max-width:1024px){
     /* ============================SIDE NAV-======================= */
