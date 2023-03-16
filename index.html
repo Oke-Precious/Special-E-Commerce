@@ -221,8 +221,10 @@
 
                         <p class="emaillabel  navbar mt-4"><span>Password</span><a href="#" style="color:brown;">Forgot Password?</a></p>
                         <div class="w-100 position-relative">
-                            <input type="text" class="w-100 emailInput " placeholder="Enter Email Address OR Phone Number">
-                            <p class="position-absolute " style="z-index: 2; right: 18px; bottom: 14px; color: rgb(173, 170, 170); font-size: 12px;">Show</p>
+                            <input type="password" id="inPassword" class="w-100 emailInput " placeholder="Enter Password">
+                            <p class="position-absolute" id="showText" style="cursor: pointer; z-index: 2; right: 18px; bottom: 14px; color: rgb(173, 170, 170); font-size: 12px;" onclick="showPassword()">
+                                Show
+                            </p>
                         </div>
                         <button class="btn btn-success w-100 mt-4 opacity-75 rounded-1"><b>Login</b></button>
                         <div class="straightLine mt-5">

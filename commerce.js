@@ -92,3 +92,24 @@ function closeNav() {
     openicon.style.display="block"
     closeicon.style.display="none"
 }
+
+const showPassword=()=>{
+    let x = document.getElementById("inPassword");
+    if(x.type == "password"){
+        x.type = "text";
+        showText.innerHTML = "Hide"
+        // alert("text")
+    }
+    else{
+        showText.innerHTML = "Show"
+        x.type = "password";
+    }
+    /*    if (x.innerHTML == allCustomer[currentUserIndex].balance ) {
+        x.innerHTML= "****"
+      showBalanceBtn.innerHTML = `<i class="fa fa-eye-slash"></i>`;
+    }
+    else {
+        x.innerHTML = allCustomer[currentUserIndex].balance;
+        showBalanceBtn.innerHTML = `<i class="fa fa-eye"></i>`;
+    }*/
+}
