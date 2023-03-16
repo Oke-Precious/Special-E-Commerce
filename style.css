@@ -451,9 +451,11 @@ font-size: 13px;
     background-color:rgb(219, 219, 219);
 }
 .straightLine p{
+    color: rgb(180, 180, 180);
     margin: 0;
     top: -15px;
     right:50%;
+    font-size: 11px;
     background-color: white;
     padding: 5px;
     position: absolute;
