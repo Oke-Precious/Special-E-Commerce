@@ -551,6 +551,21 @@ font-size: 13px;
     font-size: 12px;
     margin-bottom:7px;
 }
+.loginInstead{
+    background-color: white;
+    border: 1px solid rgb(72, 16, 156);
+    padding: 5px;
+    width: 100%;
+    font-weight: 600;
+    transition: 1s;
+    border-radius: 3px;
+    color: rgb(72, 16, 156);
+}
+.loginInstead:hover{
+    background-color: rgb(72, 16, 156);
+    color: white;
+    transition: 1s;
+}
 
 
 @media screen and (max-width:1024px){
