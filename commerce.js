@@ -114,8 +114,8 @@ const goSignup=()=>{
 // ===============SIGNUP PAGE=========================
 
 let allCustomer = [];
-if(localStorage.customerPersonalDetails){
-    allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"));
+if(localStorage.UserPersonalDetails){
+    allCustomer = JSON.parse(localStorage.getItem("UserPersonalDetails"));
 }
 const createAnAccount=()=>{
     if(
@@ -128,6 +128,16 @@ const createAnAccount=()=>{
         alert("Input something")
     }
     else{
-        alert("You are good to go")
+        let  customerDetails = {
+            firstName: fName.value,
+            lastName: lName.value,
+            email: eAddress.value,
+            phoneNumber: pNumber.value,
+            password: password.value,
+            // clickedProduct: [],
+        };
+        allCustomer.push(customerDetails);
+        localStorage.setItem("UserPersonalDetails", JSON.stringify(allCustomer));
+        alert("Successfully pddeedushed")
     }
 }
