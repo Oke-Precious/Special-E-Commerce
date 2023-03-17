@@ -523,15 +523,35 @@ font-size: 13px;
 }
 .signupContainer{
     background-color: white;
-    text-align: center;
     width: 420px;
     border-radius: 5px;
-    
+    box-shadow: 0px 0px 5px 0px rgb(211, 209, 209);
 }
 .signupContainer h2{
     padding: 6px;
     margin: 0;
+    text-align: center;
 }
+.signupContainer .eachForm{
+    width: 100%;
+    padding:10px 30px;
+}
+.signupContainer .eachForm input{
+    width: 100%;
+    border-radius: 2px;
+    font-size: 14px;
+    padding:7px 18px;
+    outline: 1px solid rgb(171, 170, 170);
+    border: none;
+}
+.signupContainer .eachForm input:focus{
+    outline-color: black;
+}
+.signupContainer .eachForm label{
+    font-size: 12px;
+    margin-bottom:7px;
+}
+
 
 @media screen and (max-width:1024px){
     /* ============================SIDE NAV-======================= */
