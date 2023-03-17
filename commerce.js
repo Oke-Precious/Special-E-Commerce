@@ -115,5 +115,19 @@ const goSignup=()=>{
 
 let allCustomer = [];
 if(localStorage.customerPersonalDetails){
-    allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"))
+    allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"));
+}
+const createAnAccount=()=>{
+    if(
+        fName.value == "" ||
+        lName.value == "" ||
+        eAddress.value == "" ||
+        pNumber.value == "" ||
+        password.value == ""
+    ){
+        alert("Input something")
+    }
+    else{
+        alert("You are good to go")
+    }
 }
