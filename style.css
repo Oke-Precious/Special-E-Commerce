@@ -514,6 +514,25 @@ font-size: 13px;
 }
 
 
+/* =========================SIGNUP PAGE ==============*/
+.signUpBody{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.signupContainer{
+    background-color: white;
+    text-align: center;
+    width: 420px;
+    border-radius: 5px;
+    
+}
+.signupContainer h2{
+    padding: 6px;
+    margin: 0;
+}
+
 @media screen and (max-width:1024px){
     /* ============================SIDE NAV-======================= */
 .overlay {
