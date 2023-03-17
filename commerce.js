@@ -104,12 +104,16 @@ const showPassword=()=>{
         showText.innerHTML = "Show"
         x.type = "password";
     }
-    /*    if (x.innerHTML == allCustomer[currentUserIndex].balance ) {
-        x.innerHTML= "****"
-      showBalanceBtn.innerHTML = `<i class="fa fa-eye-slash"></i>`;
-    }
-    else {
-        x.innerHTML = allCustomer[currentUserIndex].balance;
-        showBalanceBtn.innerHTML = `<i class="fa fa-eye"></i>`;
-    }*/
+}
+
+const goSignup=()=>{
+    window.location.href = "signUp.html";
+}
+
+
+// ===============SIGNUP PAGE=========================
+
+let allCustomer = [];
+if(localStorage.customerPersonalDetails){
+    allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"))
 }
