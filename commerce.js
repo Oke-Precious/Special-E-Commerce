@@ -134,7 +134,7 @@ const createAnAccount=()=>{
             email: eAddress.value,
             phoneNumber: pNumber.value,
             password: password.value,
-            // clickedProduct: [],
+            clickedProduct: [],
         };
         allCustomer.push(customerDetails);
         localStorage.setItem("UserPersonalDetails", JSON.stringify(allCustomer));

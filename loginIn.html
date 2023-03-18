@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body class="signUpBody">
+    <section>
+        <div class="signupContainer mt-4 p-3" style="height:80vh">
+            <p class="emaillabel my-2">Email Address or Phone Number</p>
+            <input type="text" class="w-100 emailInput" placeholder="Enter Email Address OR Phone Number">
+
+            <p class="emaillabel  navbar mt-4"><span>Password</span><a href="#" style="color:brown;">Forgot
+                    Password?</a></p>
+            <div class="w-100 position-relative">
+                <input type="password" id="inPassword" class="w-100 emailInput " placeholder="Enter Password">
+                <p class="position-absolute" id="showText"
+                    style="cursor: pointer; z-index: 2; right: 18px; bottom: 14px; color: rgb(173, 170, 170); font-size: 12px;"
+                    onclick="showPassword()">
+                    Show
+                </p>
+            </div>
+            <button class="btn btn-success w-100 mt-4 opacity-75 rounded-1"><b>Login</b></button>
+            <div class="straightLine mt-5">
+                <p class="rounded rounded-circle">OR</p>
+            </div>
+            <button
+                class="border-1 border d-flex p-2 gap-2 align-items-center justify-content-center bg-white border-primary w-100 my-4 text-primary rounded-1">
+                <p style="font-size: 12px;">Login with</p>
+                <img src="./e-asset/google logo.png" alt="" style="width: 50px;">
+            </button>
+            <footer class="offcanvas-footer text-center p-3 shadow shadow-lg w-100">
+                <a href="signUp.html" style="color:brown; font-weight:600; font-size: 16px; text-decoration: none;">Don't have an account? Signup</a>
+            </footer>
+        </div>
+    </section>
+
+
+
+    <script src="./commerce.js"></script>
+    <script src="./all.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+</body>
+
+</html>

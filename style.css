@@ -434,7 +434,12 @@ font-size: 13px;
   }
 
 /* =========================SIGNIN/UP PAGE===================== */
+.emaillabel{
+    font-size: 13px;
+    margin: 0;
+}
 .emailInput{
+    font-size: 13px;
     padding:10px;
     border-radius: 2px;
     border: 1px solid rgb(180, 180, 180);
