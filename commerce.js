@@ -109,7 +109,9 @@ const showPassword=()=>{
 const goSignup=()=>{
     window.location.href = "signUp.html";
 }
-
+const goLogin=()=>{
+    window.location.href = "logIn.html";
+}
 
 // ===============SIGNUP PAGE=========================
 

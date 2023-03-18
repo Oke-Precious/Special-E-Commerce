@@ -821,4 +821,7 @@ font-size: 13px;
         font-size: 13px;
         font-weight: 500;
       }
+      .signupContainer{
+        width: 350px;
+      }
   }
