@@ -14,17 +14,15 @@
 
 <body class="signUpBody">
     <section>
-        <div class="signupContainer mt-4 p-3" style="height:80vh">
-            <p class="emaillabel my-2">Email Address or Phone Number</p>
+        <div class="signupContainer mt-4 position-relative p-3" style="height:93vh">
+            <p class="emaillabel mt-4 my-2">Email Address or Phone Number</p>
             <input type="text" class="w-100 emailInput" placeholder="Enter Email Address OR Phone Number">
 
             <p class="emaillabel  navbar mt-4"><span>Password</span><a href="#" style="color:brown;">Forgot
                     Password?</a></p>
             <div class="w-100 position-relative">
                 <input type="password" id="inPassword" class="w-100 emailInput " placeholder="Enter Password">
-                <p class="position-absolute" id="showText"
-                    style="cursor: pointer; z-index: 2; right: 18px; bottom: 14px; color: rgb(173, 170, 170); font-size: 12px;"
-                    onclick="showPassword()">
+                <p class="position-absolute" id="showText" style="cursor: pointer; z-index: 2; right: 18px; bottom:0px; color: rgb(173, 170, 170); font-size: 12px;" onclick="showPassword()">
                     Show
                 </p>
             </div>
@@ -32,12 +30,11 @@
             <div class="straightLine mt-5">
                 <p class="rounded rounded-circle">OR</p>
             </div>
-            <button
-                class="border-1 border d-flex p-2 gap-2 align-items-center justify-content-center bg-white border-primary w-100 my-4 text-primary rounded-1">
-                <p style="font-size: 12px;">Login with</p>
+            <button class="border-1 border d-flex p-2 gap-2 align-items-center justify-content-center bg-white border-primary w-100 my-4 text-primary rounded-1">
+                <p style="font-size: 12px; margin:0;">Login with</p>
                 <img src="./e-asset/google logo.png" alt="" style="width: 50px;">
             </button>
-            <footer class="offcanvas-footer text-center p-3 shadow shadow-lg w-100">
+            <footer class="footer position-absolute bottom-0 text-center py-3 start-0 shadow shadow-lg w-100">
                 <a href="signUp.html" style="color:brown; font-weight:600; font-size: 16px; text-decoration: none;">Don't have an account? Signup</a>
             </footer>
         </div>
