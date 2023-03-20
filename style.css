@@ -2,7 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 body{
     width: 100%;
@@ -592,6 +592,12 @@ font-size: 13px;
 }
 .placeConatiner{
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.productpimg{
+    min-width: 50px;
+    height: 2000px;
 }
 
 
