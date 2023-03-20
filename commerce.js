@@ -14,68 +14,6 @@ const cancelHeader=()=>{
     navHeader.style.padding="0px";
 }
 
-const dropObject=(param)=>{
-    if(param==1){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>I'm Category</h1>
-                    `
-    }
-
-    else if(param==2){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Computer Accessories</h1>
-                    `
-    }
-    else if(param==3){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Phones and Tables</h1>
-                        `
-    }
-    else if(param==4){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Electronics</h1>
-                    `
-    }
-    else if(param==5){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Special Fashion</h1>
-                    `
-    }
-    else if(param==6){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Home and Kitchen</h1>
-                    `
-    }
-    else if(param==7){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Baby, Kids and Toys</h1>
-                    `
-    }
-    else if(param==7){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Baby, Kids and Toys</h1>
-                    `
-    }
-    else if(param==8){
-        dropContainer.style.display="block";
-        dropContainer.innerHTML=`
-                        <h1>Other Categories</h1>
-                    `
-    }
-    else{
-        dropContainer.style.display="none"
-    }
-
-}
-
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
     document.getElementById("myNav").style.opacity = "100%";
@@ -122,6 +60,16 @@ if(localStorage.customerPersonalDetails){
     allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"))
 }
 const createAnAccount=()=>{
+    for (let index = 0; index < allCustomer.length; index++) {
+         if(allCustomer[index].email==eAddress.value){
+            alert("email has been used")
+            return
+        }
+            else if(allCustomer[index].phoneNumber==pNumber.value){
+            alert("Phone Number has been used")
+            return
+        }
+    }
     if(
         fName.value == "" ||
         lName.value == "" ||
@@ -131,6 +79,7 @@ const createAnAccount=()=>{
     ){
         alert("Input something")
     }
+    
     else{
         let  customerDetails = {
             firstName: fName.value,
@@ -142,15 +91,17 @@ const createAnAccount=()=>{
         };
         allCustomer.push(customerDetails);
         localStorage.setItem("customerPersonalDetails", JSON.stringify(allCustomer));
+        alert("Signup successful")
     }
 }
+
 
 const loginAccount=()=>{
     let found =false;
     allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"))
 
     for (let index = 0; index < allCustomer.length; index++) {
-        if(allCustomer[index].email == inEmail.value && allCustomer[index].password == inPassword.value){
+        if(allCustomer[index].email == inEmail.value || allCustomer[index].phoneNumber == inEmail.value && allCustomer[index].password == inPassword.value){
             localStorage.setItem("currentUserIndex", index)
             found = true;
             break;
@@ -158,10 +109,11 @@ const loginAccount=()=>{
         
     }
     if(found==true){
-        alert("I found it")
-        // window.location.href = "dashboard.html";
+        window.location.href = "index.html";
     }
     else{
         alert("not found")
     }
 }
+let currentUserIndex = localStorage.getItem("currentUserIndex");
+// if()
