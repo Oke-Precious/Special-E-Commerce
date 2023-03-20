@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special e-commerce</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./style.css">
@@ -33,149 +33,19 @@
                 </button>
             </div>
         </nav>
-        <div id="myNav" class="overlay">
-            <div class="overlay-content">
-                <div style="height: 28px;"></div>
-                <div class="d-flex loginOut">
-                    <button onclick="goLogin()">Login</button>
-                    <button onclick="goSignup()">Signup</button>
-                </div>
-                <div class="w-100" style="padding:0 10px; border-bottom: 3px  solid rgb(219, 216, 216);">
-                    <div class="fourpart">
-                        <div class="d-flex align-items-center gap-3 py-1 px-3" style="border-right: 1px  solid rgb(219, 216, 216);">
-                            <i class="fa fa-location-dot"></i>
-                            <div class="text-start" style="margin:0; height: 40px;">
-                                <p style="margin:0; font-size: 13px;">Track Orders</p>
-                                <p style="margin-top:0px; color: gray; font-size: 10px;">View order status</p>
-                            </div>
-                        </div>
-    
-                        <div class="d-flex align-items-center gap-3 py-1 px-3">
-                            <i class="fa fa-star"></i>
-                            <div class="text-start" style="margin:0; ">
-                                <p style="margin:0; font-size: 13px;">Pending Items</p>
-                            </div>
-                        </div>
-                        
-    
-                        <div class="d-flex align-items-center py-1 px-3 gap-3" style="border-top: 1px  solid rgb(219, 216, 216); border-right: 1px  solid rgb(219, 216, 216);">
-                            <i class="fa fa-tag"></i>
-                            <div class="text-start" style="margin:0; height: 40px;">
-                                <p style="margin:0; font-size: 13px;">Track Orders</p>
-                                <p style="margin-top:0px; color: gray; font-size: 10px;">View order status</p>
-                            </div>
-                        </div>
-    
-                        <div class="d-flex align-items-center gap-3 py-1 px-3" style="border-top: 1px  solid rgb(219, 216, 216);">
-                            <i class="fa fa-home"></i>
-                            <div class="text-start" style="margin:0; height: 40px;">
-                                <p style="margin:0; font-size: 13px;">Track Orders</p>
-                                <p style="margin-top:0px; color: gray; font-size: 10px;">View order status</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="categories">
-                    <div>
-                        <b>Categories</b>
-                    </div>
-                    <div>
-                        <p>Computer and Accessories</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <p>Phone and Tablets</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <p>Electronics</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <p>Konga Fashion</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <p>Home and Kitchen</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <p>Groceries</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <p>Intel 11th Gen Campaign</p>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                    <div>
-                        <span class="d-flex align-items-center gap-2 w-50">
-                            <i class="fa fa-phone" style="font-size:12px;"></i>
-                            <p>Contact Us</p>
-                        </span>
-                        <span></span>
-                    </div>
-                    <div style="height: 150px;"></div>
-                </div>
-            </div>
-        </div>
 
-        <div class="d-flex searchCon">
+        <div class="d-flex searchCon pb-2" >
             <div class="search2 rounded-start ">
                 <input type="text" placeholder="Search for products, brands and categories..." class="border-0 bg-transparent w-100">
             </div>
             <button class=" rounded-end "><i class="fa fa-search"></i></button>
         </div>
-
         
     </section>
 
     <section style="top: -400px;" class="navSection" id="navSection">
-        <!-- <header class="nav-header position-relative" id="navHeader">
-            <h3>Free Delivery <span class="fw-light">On Orders From </span>₦4,599 & Above</h3>
-            <button class="btn px-4 py-0 btn-warning rounded rounded-5 text-dark">Shop Now 
-                <i class="fa fa-angle-right"></i>
-            </button>
-            <p>Location: <span class="fw-bold">Lagos, Abuja, Port Harcourt</span></p>
-            <i onclick="cancelHeader()" class="position-absolute fa fa-times btn btn-light" style="color:rgb(72, 16, 156) ; right:10px; top: 10px;"></i>
-        </header> -->
-        <div class="d-flex justify-content-center gap-5 p-2 bg-light">
-            <p class="headerIcon ">
-                <i class="fa fa-box text-warning"></i>
-                <span class="">Travel</span>
-            </p>
-            <p class="headerIcon ">
-                <i class="fa fa-bowl-food text-warning"></i>
-                <span style="color: rgb(72, 16, 156)">Special</span>
-                <span class="text-warning">Food</span>
-            </p>
-            <p class="headerIcon ">
-                <i class="fa fa-money-bill " style="color: rgb(72, 16, 156)"></i>
-                <span class="">Special</span>
-                <span style="color: rgb(72, 16, 156)">Pay</span>
-            </p>
-            <p class="headerIcon ">
-                <i class="fa fa-wine-glass" style="color: rgb(72, 16, 156)"></i>
-                <span class="">DRINKS</span>
-            </p>
-            <p class="headerIcon ">
-                <span class="" style="color: rgb(72, 16, 156)">Special</span>
-                <span class="text-primary">Health</span>
-            </p>
-            <p class="headerIcon ">
-                <i class="fa fa-money-bill " style="color: rgb(72, 16, 156)"></i>
-                <span class="">LOGISTICS</span>
-            </p>
-            <p class="headerIcon ">
-                <i class="fa fa-money-bill " style="color: rgb(72, 16, 156)"></i>
-                <span class="">CATEGORIES</span>
-            </p>
-        </div>
-    
         <nav class="navbar theNav">
             <div></div>
-
-            
-
             <p>Store Locator</p>
             <p>Sell on Special</p>
             <div class="d-flex searchCon">
@@ -480,6 +350,16 @@
         </nav>
     
         <div id="dropContainer">
+        </div>
+    </section>
+
+    <section class="topsection">
+        <div class="tsecContainer">
+            <a href="">Home</a>
+            <i class="fa fa-angle-right"></i>
+            <a href="">Computer and Accessories</a>
+            <i class="fa fa-angle-right"></i>
+            <a href="">Wifi & Networking</a>
         </div>
     </section>
 

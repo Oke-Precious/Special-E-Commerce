@@ -573,6 +573,26 @@ font-size: 13px;
 }
 
 
+
+/* =======================CART PAGE============================*/
+.topsection{
+    width: 100%;
+    background-color: white;
+    padding:20px 100px;
+}
+.topsection .tsecContainer{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.topsection .tsecContainer a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
 @media screen and (max-width:1024px){
     /* ============================SIDE NAV-======================= */
 .overlay {
