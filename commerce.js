@@ -116,9 +116,10 @@ const goLogin=()=>{
 // ===============SIGNUP PAGE=========================
 
 
-let allUser = [];
-if(localStorage.customerUserDetails){
-    allUser = JSON.parse(localStorage.getItem("customerUserDetails"))
+
+let allCustomer = [];
+if(localStorage.customerPersonalDetails){
+    allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"))
 }
 const createAnAccount=()=>{
     if(
@@ -139,8 +140,28 @@ const createAnAccount=()=>{
             password: password.value,
             clickedProduct: [],
         };
-        allUser.push(customerDetails);
-        localStorage.setItem("customerUserDetails", JSON.stringify(allUser));
-        alert("Successfully pddeedushed")
+        allCustomer.push(customerDetails);
+        localStorage.setItem("customerPersonalDetails", JSON.stringify(allCustomer));
+    }
+}
+
+const loginAccount=()=>{
+    let found =false;
+    allCustomer = JSON.parse(localStorage.getItem("customerPersonalDetails"))
+
+    for (let index = 0; index < allCustomer.length; index++) {
+        if(allCustomer[index].email == inEmail.value && allCustomer[index].password == inPassword.value){
+            localStorage.setItem("currentUserIndex", index)
+            found = true;
+            break;
+        }
+        
+    }
+    if(found==true){
+        alert("I found it")
+        // window.location.href = "dashboard.html";
+    }
+    else{
+        alert("not found")
     }
 }
