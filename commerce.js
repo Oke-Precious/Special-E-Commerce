@@ -115,9 +115,10 @@ const goLogin=()=>{
 
 // ===============SIGNUP PAGE=========================
 
-let allCustomer = [];
-if(localStorage.UserPersonalDetails){
-    allCustomer = JSON.parse(localStorage.getItem("UserPersonalDetails"));
+
+let allUser = [];
+if(localStorage.customerUserDetails){
+    allUser = JSON.parse(localStorage.getItem("customerUserDetails"))
 }
 const createAnAccount=()=>{
     if(
@@ -138,8 +139,8 @@ const createAnAccount=()=>{
             password: password.value,
             clickedProduct: [],
         };
-        allCustomer.push(customerDetails);
-        localStorage.setItem("UserPersonalDetails", JSON.stringify(allCustomer));
+        allUser.push(customerDetails);
+        localStorage.setItem("customerUserDetails", JSON.stringify(allUser));
         alert("Successfully pddeedushed")
     }
 }
