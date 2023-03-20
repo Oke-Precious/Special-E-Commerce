@@ -50,6 +50,9 @@ const goSignup=()=>{
 const goLogin=()=>{
     window.location.href = "logIn.html";
 }
+const goBack=()=>{
+    window.history.back()
+}
 
 // ===============SIGNUP PAGE=========================
 
