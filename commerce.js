@@ -3,7 +3,7 @@ window.onscroll = function() {
 }
 const landingPageScroll=()=>{
     if(document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
-        navSection.style.top = "-115px "
+        navSection.style.top = "-47px"
         // alert("work")
     }
     else{}
